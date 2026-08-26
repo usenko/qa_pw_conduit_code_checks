@@ -11,7 +11,7 @@
 ## Task
 
 1. Set up ESLint using instructions given in the theory:
-   
+
     - Run the `npx eslint` command and make sure you see the list of errors.
     - Fix all bugs in the code.
 
