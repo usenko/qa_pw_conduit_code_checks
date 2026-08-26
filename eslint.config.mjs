@@ -1,7 +1,7 @@
-import pluginJs from "@eslint/js";
-import playwright from "eslint-plugin-playwright";
-import globals from "globals";
-import { defineConfig } from "eslint/config";
+import pluginJs from '@eslint/js';
+import playwright from 'eslint-plugin-playwright';
+import globals from 'globals';
+import { defineConfig } from 'eslint/config';
 
 export default defineConfig([
   {
@@ -13,24 +13,24 @@ export default defineConfig([
   },
 
   pluginJs.configs.recommended,
-  playwright.configs["flat/recommended"],
+  playwright.configs['flat/recommended'],
   {
     rules: {
-      "no-unused-vars": "error",
-      "max-len": [
-        "error",
+      'no-unused-vars': 'error',
+      'max-len': [
+        'error',
         {
           code: 85,
           comments: 85,
           ignoreTemplateLiterals: true,
         },
       ],
-      "playwright/expect-expect": "off",
+      'playwright/expect-expect': 'off',
     },
     ignores: [
-      "**/node_modules/*",
-      "playwright.config.js",
-      "**/playwright-report/**",
+      '**/node_modules/*',
+      'playwright.config.js',
+      '**/playwright-report/**',
     ],
   },
 ]);
